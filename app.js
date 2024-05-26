@@ -1,3 +1,9 @@
+/*
+* Curso de Engenharia de Software - UniEVANGÉLICA
+* Disciplina de Programação Web
+* Dev: Otavio Lemes de Oliveira
+* DATA 26/05/2024
+*/
 const express = require('express');
 const routes = require('./routes/routes');
 const db = require('./db');
