@@ -36,5 +36,19 @@ exports.authenticateUser = async (req, res) => {
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
+  // userController.js
+
+  // Importe a função `redirect` do Express para redirecionar o usuário
+  const { redirect } = require('express');
+
+  exports.authenticateUser = async (req, res) => {
+    try {
+  // Se a autenticação for bem-sucedida, redirecione para a página de cursos
+    return redirect('/courses');
+    } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 };
 
