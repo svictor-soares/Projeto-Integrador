@@ -1,4 +1,9 @@
-// authMiddleware.js
+/*
+* Curso de Engenharia de Software - UniEVANGÉLICA
+* Disciplina de Programação Web
+* Dev: Victor Soares
+* DATA 26/05/2024
+*/// authMiddleware.js
 const jwt = require('jsonwebtoken');
 
 exports.authenticateToken = (req, res, next) => {
